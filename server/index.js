@@ -2,11 +2,12 @@ const express = require('express');
 const dotenv = require('dotenv').config()
 const app = express();
 const port = process.env.PORT;
+const indexRoute = require('./routes/indexRoute')
 
 
-app.get('/', (req, res) => {
-    res.send('hello world');
-})
+app.use('/', indexRoute)
+
+
 
 
 app.get('/home', (req, res) => {
@@ -14,7 +15,7 @@ app.get('/home', (req, res) => {
     //
 
 
-    res.send('wow')
+    res.send('hey');
 
 
 
