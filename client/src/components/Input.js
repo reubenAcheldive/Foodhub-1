@@ -7,7 +7,7 @@ const Input = ({ margin, title, width, helpTitle, placeholder, type }) => {
         <form className={margin} style={{ width: width }} >
             <label className='form-label'>{title}</label>
             <input type={type} placeholder={placeholder} className='form-control'></input>
-            <div id="emailHelp" class="form-text">{helpTitle}</div>
+            <div id="emailHelp" className="form-text">{helpTitle}</div>
 
 
         </form>
