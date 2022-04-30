@@ -5,8 +5,7 @@ function Topbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-black ">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#" >
-          <img src="/assets/logo-black.png" alt="" width="270" height="50"></img></a>
+        <Header title={"Foodhub"} color={"text-warning"} size={"fs-1"} margin={"mt-5 text-center"}></Header>
         <div className="collapse navbar-collapse nav justify-content-center" id="navbarSupportedContent">
           <center>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 fs-5 fst-italic">

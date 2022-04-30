@@ -5,31 +5,27 @@ import { NewUserAuth } from "../interface/NewUserAuth.model";
 
 function Register() {
   const [val, setVal] = useState<NewUserAuth>({
-    firstname: "",
-    lastname: "",
+    firstName: "",
+    lastName: "",
     email: "1",
     password: "",
+    confirmPassword: ""
   });
 
   const handelInputValue = (e: any) => {
     const { name, value } = e.target;
-    if (name === "firstname") {
-      setVal({ ...val, firstname: value });
-      console.log(val);
-    
+    if (name === "FirstName") {
+      setVal({ ...val, firstName: value });  
     }
     if (name === "lastname") {
-      setVal({ ...val, lastname: value });
-      console.log(val);
+      setVal({ ...val, lastName: value });
     }
     if (name === "email") {
       setVal({ ...val, email: value });
-      console.log(val);
     }
     if (name === "password") {
       setVal({ ...val, password: value });
-      console.log(val);
-    }
+   }
   };
   const handelSubmit = (e: any) => {
     e.preventDefault();
@@ -44,9 +40,9 @@ function Register() {
        <Form.Group className="mb-3" controlId="formBasicFirstName">
         <Form.Label>First Name</Form.Label>
         <Form.Control 
-        type="firstname" 
+        type="FirstName" 
         placeholder=" Enter FirstName"
-        name="firstname"
+        name="FirstName"
         onChange={handelInputValue}
         
         />
