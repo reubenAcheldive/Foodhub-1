@@ -1,11 +1,11 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
-import { IFoodDb } from "../../interface/IFoodDb";
+
 //
-export const Cards = ({ id, resname, dishname, image, stars }: IFoodDb) => {
+export const Cards = ({ id, resname, dishname, image, stars }: any) => {
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={ image } />
+      <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>{resname}</Card.Title>
         <Card.Text>{dishname}</Card.Text>
