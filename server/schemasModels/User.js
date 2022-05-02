@@ -26,14 +26,15 @@ const userSchema = new Schema({
     },
     dateOfBirth: {
         type: Date,
-        required: true
+        deafult: ""
     },
     dateOfRegistration: {
         type: Date,
+        deafult: new Date("15.05.1996")
     },
     Address: {
         type: String,
-        required: true
+        deafult: null
     },
     Followers: {
         type: Array,
@@ -52,11 +53,12 @@ const userSchema = new Schema({
         default: []
     },
     isConnected: {
-        type: Boolean
+        type: Boolean,
+        default: false
     },
     profilePicture: {
         type: String,
-        default: " "
+        default: "wow "
     },
     isAdmin: {
         type: Boolean,
