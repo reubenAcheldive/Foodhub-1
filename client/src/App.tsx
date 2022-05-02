@@ -1,21 +1,16 @@
-import Login from "./pages/Login";
+import { Col, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Home from "./pages/Home";
-import Register from "./pages/Register";
-import { useEffect } from "react";
-import { dishs } from "./api/dishs";
-function App() {
-  useEffect(() => {
-    const foo = async () => {
-      await dishs()
 
-    }
-    foo()
-  },[])
+function App() {
   return (
-    <div>
-      {/* <Login /> */}
-      <Home />
-    </div>
+    <Container>
+      <Row>
+        <Col>
+          <Home />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

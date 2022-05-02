@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { loginAuth } from "../api/userAuth";
 import { UserAuth } from "../interface/UserAuth.model";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 function Login() {
   const [val, setVal] = useState<UserAuth>({
     email: "1",
